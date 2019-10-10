@@ -1,6 +1,8 @@
 <template>
   <v-app>
-    <v-app-bar app>
+      <first-component></first-component>
+    <!-- <p>{{ myForm }}</p> -->
+    <!-- <v-app-bar app>
       <v-toolbar-title class="headline text-uppercase">
         <span>Vuetify</span>
         <span class="font-weight-light">MATERIAL DESIGN</span>
@@ -17,20 +19,24 @@
 
     <v-content>
       <HelloWorld/>
-    </v-content>
+      <firstComponent/>
+    </v-content> -->
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+// import HelloWorld from './components/HelloWorld';
+import firstComponent from './components/firstComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-  },
-  data: () => ({
-    //
-  }),
-};
+    // HelloWorld,
+    firstComponent,
+    // props: ['myForm'],
+  }}
+//   data: () => ({
+//     //
+//   }),
+// };
 </script>
